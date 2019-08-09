@@ -17691,7 +17691,13 @@ hr.line-deafult {
 }
 
 .page-header .content-center.brand {
-  width: 47%;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .page-header .content-center.brand {
+    width: 47%;
+  }
 }
 
 .page-header footer {
