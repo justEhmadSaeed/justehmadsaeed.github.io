@@ -390,5 +390,18 @@
 			type="text/javascript"
 			defer
 		></script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				$(function () {
+					$(document).scroll(function () {
+						const $nav = $('.navbar');
+						$nav.toggleClass(
+							'navbar-transparent',
+							$(this).scrollTop() < $nav.height()
+						);
+					});
+				});
+			});
+		</script>
 	</body>
 </html>

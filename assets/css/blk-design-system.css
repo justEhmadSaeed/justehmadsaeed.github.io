@@ -1094,6 +1094,9 @@ img {
 	padding-top: 25px;
 }
 
+.navbar-colored {
+	background: #1f2251;
+}
 .navbar .navbar-brand {
 	position: relative;
 	padding-top: 0.3125rem;
