@@ -1054,9 +1054,26 @@ a.text-white:focus {
 }
 
 @media screen and (min-width: 992px) {
+	.navbar-collapse {
+		background: none !important;
+	}
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding-right: 0.5rem;
+		padding-left: 0.5rem;
+	}
 	.footer .copyright {
 		float: right;
 		padding-right: 30px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.nested-list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.nested-list li {
+		flex: 50%;
 	}
 }
 
@@ -1457,16 +1474,6 @@ img {
 	}
 }
 
-@media screen and (min-width: 992px) {
-	.navbar-collapse {
-		background: none !important;
-	}
-	.navbar-expand-lg .navbar-nav .nav-link {
-		padding-right: 0.5rem;
-		padding-left: 0.5rem;
-	}
-}
-
 @media screen and (max-width: 991px) {
 	.navbar .navbar-translate {
 		width: 100%;
@@ -1846,27 +1853,6 @@ p.description {
 	z-index: 2;
 }
 
-/*
- * Container style
- */
-
-/*
- * Scrollbar rail styles
- */
-
-/*
- * Scrollbar thumb styles
- */
-
-/* MS supports */
-
-/*!
-Animate.css - http://daneden.me/animate
-Licensed under the MIT license - http://opensource.org/licenses/MIT
-
-Copyright (c) 2015 Daniel Eden
-*/
-
 @-webkit-keyframes shake {
 	from,
 	to {
@@ -2000,90 +1986,3 @@ Copyright (c) 2015 Daniel Eden
 		transform: translate3d(0, -100%, 0);
 	}
 }
-
-/* ========================================================================
- * bootstrap-switch - v3.3.4
- * http://www.bootstrap-switch.org
- * ========================================================================
- * Copyright 2012-2013 Mattia Larentis
- * http://www.apache.org/licenses/LICENSE-2.0
- */
-
-.bootstrap-switch {
-	display: inline-block;
-	direction: ltr;
-	cursor: pointer;
-	border-radius: 30px;
-	border: 0;
-	position: relative;
-	text-align: left;
-	overflow: hidden;
-	box-shadow: 0 0px 10px rgba(0, 0, 0, 0.13);
-	margin-bottom: 10px;
-	line-height: 8px;
-	width: 59px !important;
-	height: 22px;
-	outline: none;
-	z-index: 0;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	vertical-align: middle;
-	-webkit-transition: border-color ease-in-out 0.15s,
-		box-shadow ease-in-out 0.15s;
-	transition: border-color ease-in-out 0.15s,
-		box-shadow ease-in-out 0.15s;
-	background-position: center center;
-	background-size: cover;
-}
-
-/*! nouislider - 11.1.0 - 2018-04-02 11:18:13 */
-
-/* Functional styling;
- * These styles are required for noUiSlider to function.
- * You don't need to change these rules to apply your design.
- */
-
-/* Wrapper for all connect elements.
- */
-
-/* Offset direction
- */
-
-/* Give origins 0 height/width so they don't interfere with clicking the
- * connect elements.
- */
-
-/* Slider size and handle placement;
- */
-
-/* Styling;
- * Giving the connect element a border radius causes issues with using transform: scale
- */
-
-/* Handles and cursors;
- */
-
-/* Disabled state;
- */
-
-/* Base;
- *
- */
-
-/* Values;
- *
- */
-
-/* Markings;
- *
- */
-
-/* Horizontal layout;
- *
- */
-
-/* Vertical layout;
- *
- */
