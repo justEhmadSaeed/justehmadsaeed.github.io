@@ -408,6 +408,7 @@ h3,
 .nav-link:hover,
 .nav-link:focus {
 	text-decoration: none;
+	cursor: pointer;
 }
 
 .navbar {
@@ -803,9 +804,9 @@ a.text-white:focus {
 	padding: 0;
 }
 
-.btn.btn-icon:not(.btn-footer) .tim-icons,
+.btn.btn-icon:not(.btn-footer) .fa,
 .btn.btn-icon:not(.btn-footer) .fab,
-.navbar .navbar-nav > a.btn.btn-icon:not(.btn-footer) .tim-icons,
+.navbar .navbar-nav > a.btn.btn-icon:not(.btn-footer) .fa,
 .navbar .navbar-nav > a.btn.btn-icon:not(.btn-footer) .fab {
 	position: absolute;
 	font-size: 1em;
@@ -1224,11 +1225,13 @@ img {
 	.navbar .navbar-nav .btn span:active:focus {
 		color: #222a42 !important;
 	}
-	.navbar .navbar-nav a.nav-link i {
+	.navbar .navbar-nav a.nav-link i,
+	.navbar .navbar-nav div.nav-link i {
 		opacity: 1;
 		margin-right: 5px;
 	}
-	.navbar .navbar-nav a.nav-link p {
+	.navbar .navbar-nav a.nav-link p,
+	.navbar .navbar-nav div.nav-link p {
 		display: inline-block;
 		margin-left: 7px;
 		color: #ffffff;
